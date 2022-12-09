@@ -1,9 +1,10 @@
 .section {
-    padding: 94px 0;
+    @extend %section;
 }
 
 .boxforflex-sections {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 30px;
 }

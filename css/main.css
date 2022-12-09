@@ -29,8 +29,18 @@
   overflow: hidden;
 }
 
-.team-section {
-  padding: 94px 0;
+.team-section, .section-features, .section {
+  padding: 60px 0;
+}
+@media screen and (min-width: 768px) {
+  .team-section, .section-features, .section {
+    padding: 60px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-section, .section-features, .section {
+    padding: 94px 0;
+  }
 }
 
 body {
@@ -201,11 +211,27 @@ address {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  outline: 2px solid orange;
+  outline-offset: -2px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .logo-web {
@@ -427,10 +453,6 @@ address {
   background-size: 16px 15px;
 }
 
-.section {
-  padding: 94px 0;
-}
-
 .boxforflex-sections {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,6 +460,8 @@ address {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -555,9 +579,11 @@ address {
   text-align: center;
 }
 
-.section-features {
-  padding-top: 94px;
-  padding-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .section-features {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
 }
 
 .feature-icon-bgr {
@@ -577,7 +603,17 @@ address {
 }
 
 .list__features {
-  max-width: 270px;
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .list__features {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list__features {
+    max-width: 270px;
+  }
 }
 
 .name__features {
@@ -595,10 +631,16 @@ address {
 }
 
 .section-title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .wwd__image {
@@ -679,7 +721,12 @@ address {
 }
 
 .team-cards-text-space {
-  padding: 30px 0;
+  padding: 30px 0 24px;
+}
+@media screen and (min-width: 1200px) {
+  .team-cards-text-space {
+    padding: 30px 0;
+  }
 }
 
 .team-section {

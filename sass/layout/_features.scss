@@ -1,21 +1,35 @@
 .section-features {
-    @include section(94px, 0);
+    @extend %section;
+
+    @media screen and (min-width: 1200px) {
+        @include section(94px, 0);
+    }    
 }
 
 .feature-icon-bgr {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 
     height: 120px;
     margin-bottom: 30px;
 
     background-color: #f5f4fa;
     border-radius: 4px;
+
+
 }
 
 .list__features {
-    max-width: 270px;
+    max-width: 450px;
+
+    @media screen and (min-width: 768px) {
+        max-width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 270px;
+    } 
 }
 
 .name__features {
