@@ -1,0 +1,34 @@
+.client {
+    width: 170px;
+    height: 92px;
+
+    transition-property: fill;
+    @extend .btn-transitions;
+}
+
+.link__client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid var(--icon);
+    border-radius: 4px;
+
+    transition-property: border;
+    @extend .btn-transitions;
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--brand);
+    }
+}
+
+.icon {
+    .client:hover &,
+    .client:focus & {
+        fill: var(--brand);
+    }
+}

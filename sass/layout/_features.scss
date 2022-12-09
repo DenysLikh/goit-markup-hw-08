@@ -1,0 +1,37 @@
+.section-features {
+    @include section(94px, 0);
+}
+
+.feature-icon-bgr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 120px;
+    margin-bottom: 30px;
+
+    background-color: #f5f4fa;
+    border-radius: 4px;
+}
+
+.list__features {
+    max-width: 270px;
+}
+
+.name__features {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+}
+
+.text__features {
+    display: block;
+
+    line-height: 1.71;
+    color: var(--contacts);
+}
