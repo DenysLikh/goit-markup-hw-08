@@ -4,7 +4,15 @@
 
 .boxforflex-sections {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+}
+
+.section-w-w-d {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }  
 }
