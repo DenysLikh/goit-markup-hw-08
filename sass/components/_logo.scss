@@ -2,10 +2,16 @@
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
+    font-size: 24px;
+    line-height: calc(28 / 24);
     letter-spacing: 0.03em;
     color: var(--brand);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: calc(31 / 26);
+    }
+    
 }
 
 .logo-studio-header {
@@ -16,9 +22,14 @@
 
 .footer-logo-text {
     display: flex;
+    justify-content: center;
     align-items: baseline;
     
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+        justify-content: left;
+    }
 }
 
 .logo-web-footer {

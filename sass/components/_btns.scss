@@ -5,7 +5,11 @@
 
 .btn {
     min-height: 50px;
-    padding: 10px 32px;
+    padding: 10px 24px;
+
+    @media screen and (min-width: 1200px) {
+        padding: 10px 32px;
+    } 
 
     font-family: inherit;
 
@@ -26,7 +30,11 @@
 }
 
 .hero-btn {
-    min-width: 216px;
+    min-width: 200px;
+
+    @media screen and (min-width: 1200px) {
+        min-width: 216px;
+    } 
 }
 
  .modal-btn,

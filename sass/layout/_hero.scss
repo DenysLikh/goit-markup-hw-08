@@ -1,6 +1,7 @@
 .boxforflex-hero-text,
 .boxforflex-hero-btn {
     display: flex;
+    justify-content: center;
 
     margin: 0 auto;
 }
@@ -20,11 +21,25 @@
 
 .title {
     margin-bottom: 30px;
-    max-width: 696px;
+    max-width: 280px;
 
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-weight: 700;
+
+    font-size: 24px;
+    line-height: 1.62;
+
+    @media screen and (min-width: 480px) {
+        font-size: 26px;
+        max-width: 360px;
+        font-weight: 900;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }   
+
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--original-white);
