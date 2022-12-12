@@ -540,13 +540,20 @@ address {
   position: fixed;
   top: 0;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
-  background-color: #3f51b5;
+  padding: 48px 40px;
+  background-color: var(--original-white);
   z-index: 999;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(101%);
+          transform: translateX(101%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
@@ -562,20 +569,79 @@ address {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
 }
 
 .mobile-menu {
   padding: 0;
   margin: 0;
+  margin-bottom: auto;
   list-style: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
 }
 
 .mobile-menu .link {
   display: block;
-  padding: 10px;
-  color: #fff;
   text-decoration: none;
+  margin-bottom: 35px;
+}
+
+.mobile-menu-link {
+  color: var(--original-black);
+}
+
+.mobile-current {
+  color: var(--brand);
+}
+
+.mobile-contacts-phone {
+  display: block;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
+  color: var(--brand);
+}
+
+.mobile-contacts-mail {
+  display: block;
+  margin-bottom: 64px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+  color: var(--contacts);
+}
+
+.mobile-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.mobile-social-link {
+  position: relative;
+  color: var(--brand);
+}
+
+.mobile-social-link::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 22px;
+  height: 1px;
+  margin: 0;
+  background-color: orange;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.mobile-social-link::after:last-child {
+  background-color: red;
 }
 
 .boxforflex-sections {
