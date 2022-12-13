@@ -22,9 +22,20 @@
     left: 50%;
 
     transform: translateX(-50%) translateY(-50%);
-    padding: 40px;
-    width: 528px;
-    min-height: 581px;
+
+    padding: 30px;
+    width: 95%;    
+
+    @media screen and (min-width: 480px) {
+        padding: 40px;
+        width: 450px;
+        min-height: 609px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        min-height: 581px;
+    }
 
     background: var(--original-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -46,8 +57,12 @@
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        line-height: 1.15;
+    }
 }
 
 .modal-form-group {
@@ -101,9 +116,13 @@
 .modal-comment {
     resize: none;
     display: block;
-    height: 120px;
+    height: 90px;
     padding: 12px 16px;
     margin: 0;
+
+    @media screen and (min-width: 480px) {
+        height: 120px;
+    }
 }
 
 .modal-comment::placeholder {
@@ -130,7 +149,11 @@
     justify-content: center;
     gap: 8px;
 
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 30px;
+    }
 }
 
 .checkbox-text {
