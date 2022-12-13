@@ -29,7 +29,7 @@
 	align-items: center;
 	justify-content: center;
 
-	margin: 0;
+	margin: 10px 0;
 	padding: 0;
 	background-color: transparent;
 	cursor: pointer;
@@ -47,6 +47,11 @@
 .menu-toggle:hover,
 .menu-toggle:focus {
 	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.header-mobile-icon:hover,
+.header-mobile-icon:focus {
+	fill: var(--brand);
 }
 
 .menu-container {
@@ -131,6 +136,11 @@
 .mobile-social {
 	display: flex;
 	gap: 20px;
+
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.22;
+	letter-spacing: 0.02em;
 }
 
 .mobile-social-link {
@@ -145,20 +155,20 @@
 	content: "";
 	display: block;
 	// align-items: baseline;
-    // justify-content: center;
+	// justify-content: center;
 
-	width: 22px;    
-    height: 1px;
-    margin: 0;
+	width: 22px;
+	height: 1px;
+	margin: 0;
 
-    background-color: orange;
+	background-color: orange;
 
-    // border: 1px solid rgba(33, 33, 33, 0.2);
-    // outline-offset: -1px;
+	// border: 1px solid rgba(33, 33, 33, 0.2);
+	// outline-offset: -1px;
 
-    transform: rotate(90deg);
+	transform: rotate(90deg);
 }
 
 .mobile-social-link::after:last-child {
-    background-color: red;
+	background-color: red;
 }

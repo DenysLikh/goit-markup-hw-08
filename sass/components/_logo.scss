@@ -15,9 +15,12 @@
 }
 
 .logo-studio-header {
-    margin-right: 93px;
+    margin-right: 88px;
     color: var(--original-black);
     
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+    }
 }
 
 .footer-logo-text {
