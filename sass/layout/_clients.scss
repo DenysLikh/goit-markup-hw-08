@@ -5,11 +5,11 @@
     transition-property: fill;
     @extend .btn-transitions;
 
-    @media screen and (min-width: 480px) and (max-width: 767.99px) {
+    @media screen and (min-width: 480px) and (max-width: 767.98px) {
         width: 210px;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199.99px) {
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
         width: 226px;
     }
 }

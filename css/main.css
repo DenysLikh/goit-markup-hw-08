@@ -924,12 +924,12 @@ address {
 .list__features {
   max-width: 270px;
 }
-@media screen and (min-width: 480px) and (max-width: 767.99px) {
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
   .list__features {
     max-width: 450px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199.99px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .list__features {
     max-width: 354px;
   }
@@ -1059,12 +1059,12 @@ address {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-@media screen and (min-width: 480px) and (max-width: 767.99px) {
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
   .team-cards {
     width: 450px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199.99px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .team-cards {
     width: 354px;
   }
@@ -1076,12 +1076,12 @@ address {
   -webkit-transition-property: fill;
   transition-property: fill;
 }
-@media screen and (min-width: 480px) and (max-width: 767.99px) {
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
   .client {
     width: 210px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199.99px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .client {
     width: 226px;
   }
@@ -1112,6 +1112,17 @@ address {
   fill: var(--brand);
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
 .footer {
   padding: 60px 0;
   background-color: var(--footer-bgd);
@@ -1121,9 +1132,23 @@ address {
   text-align: center;
   margin-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .address-wrapper {
+    text-align: left;
+    min-width: 231px;
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+}
 
 .join-wrapper {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .join-wrapper {
+    margin-right: 93px;
+    margin-bottom: 0;
+  }
 }
 
 .address {
@@ -1133,6 +1158,11 @@ address {
 
 .list-address {
   margin-top: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .list-address {
+    margin-top: 9px;
+  }
 }
 
 .footer-contacts {
@@ -1150,9 +1180,21 @@ address {
   margin-bottom: 20px;
   color: var(--original-white);
 }
+@media screen and (min-width: 1200px) {
+  .footer-cta {
+    text-align: left;
+  }
+}
 
 .footer-social-icons {
   margin-bottom: 0;
+}
+@media screen and (min-width: 1200px) {
+  .footer-social-icons {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
 }
 
 .footer-icon {
@@ -1161,6 +1203,31 @@ address {
 
 .footer-link {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .address-and-join-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    gap: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address-and-join-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .sign-up-wrapper {
@@ -1177,6 +1244,15 @@ address {
           flex-direction: column;
   gap: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .signup-field {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 12px;
+  }
+}
 
 .sign-up-field {
   height: 50px;
@@ -1192,6 +1268,20 @@ address {
   border-radius: 4px;
   background-color: transparent;
   outline: 0;
+}
+@media screen and (min-width: 768px) {
+  .sign-up-field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sign-up-field {
+    width: 358px;
+  }
 }
 
 .sign-up-field::-webkit-input-placeholder {
@@ -1241,6 +1331,17 @@ address {
 @media screen and (min-width: 480px) {
   .footer-icon-send-email {
     right: 153px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-icon-send-email {
+    right: 297px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-icon-send-email {
+    right: 28px;
+    top: calc(50% + 6px);
   }
 }
 
