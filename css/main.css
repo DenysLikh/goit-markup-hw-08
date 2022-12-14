@@ -470,20 +470,33 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 8px;
+  gap: 15px;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 480px) {
   .modal-check {
+    gap: 8px;
     margin-bottom: 30px;
   }
 }
 
 .checkbox-text {
-  font-size: 14px;
-  line-height: 1.71;
+  width: 180px;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--contacts);
+}
+@media screen and (min-width: 480px) {
+  .checkbox-text {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox-link {
