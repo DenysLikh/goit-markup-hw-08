@@ -8,12 +8,18 @@
     background-color: var(--footer-bgd);    
 }
 
-.address-wrapper {
+.address-wrapper {   
+    text-align: center;
+
+    margin-bottom: 60px;
+
     // min-width: 231px;
     // margin-right: 70px;
 }
 
 .join-wrapper {
+    margin-bottom: 60px;
+
     // margin-right: 93px;
 }
 
@@ -23,6 +29,8 @@
 }
 
 .list-address {
+    margin-top: 8px;
+    
     // margin-top: 9px;
 }
 
@@ -42,6 +50,8 @@
 }
 
 .footer-cta {
+    text-align: center;
+    
     margin-bottom: 20px;
     color: var(--original-white);    
 }
@@ -65,12 +75,15 @@
 
 .signup-field {
     display: flex;
-    gap: 12px;
+    flex-direction: column;
+    gap: 20px;
+    // gap: 12px;
 }
 
 .sign-up-field {
     height: 50px;
-    width: 358px;
+    width: 100%;
+    // width: 358px;
     padding: 0 16px;
 
     font-size: 14px;
@@ -98,6 +111,13 @@
 
 .footer-icon-send-email {
     position: absolute;
-    right: 28px;
-    top: calc(50% + 6px);
+    right: 73px;
+    top: calc(50% + 41px);
+
+    @media screen and (min-width: 480px) {
+        right: 153px;        
+    }
+    
+    // right: 28px;
+    // top: calc(50% + 6px);
 }

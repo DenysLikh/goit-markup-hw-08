@@ -1117,9 +1117,22 @@ address {
   background-color: var(--footer-bgd);
 }
 
+.address-wrapper {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.join-wrapper {
+  margin-bottom: 60px;
+}
+
 .address {
   line-height: 1.71;
   color: var(--original-white);
+}
+
+.list-address {
+  margin-top: 8px;
 }
 
 .footer-contacts {
@@ -1133,6 +1146,7 @@ address {
 }
 
 .footer-cta {
+  text-align: center;
   margin-bottom: 20px;
   color: var(--original-white);
 }
@@ -1157,12 +1171,16 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 12px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
 }
 
 .sign-up-field {
   height: 50px;
-  width: 358px;
+  width: 100%;
   padding: 0 16px;
   font-size: 14px;
   line-height: 1.17;
@@ -1217,8 +1235,13 @@ address {
 
 .footer-icon-send-email {
   position: absolute;
-  right: 28px;
-  top: calc(50% + 6px);
+  right: 73px;
+  top: calc(50% + 41px);
+}
+@media screen and (min-width: 480px) {
+  .footer-icon-send-email {
+    right: 153px;
+  }
 }
 
 .boxforflex-portfolio-list {
