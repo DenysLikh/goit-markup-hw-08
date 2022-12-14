@@ -68,7 +68,7 @@
 	background-color: var(--original-white);
 	z-index: 999;
 
-	transform: translateX(101%);
+	transform: translateX(100%);
 	transition: transform 250ms ease-in-out;
 }
 
@@ -114,11 +114,15 @@
 	margin-bottom: 32px;
 
 	font-weight: 500;
-	font-size: 34px;
+	font-size: 24px;
 	line-height: calc(40 / 34);
 	letter-spacing: 0.02em;
 
 	color: var(--brand);
+
+	@media screen and (min-width: 480px) {
+        font-size: 34px;
+    }
 }
 
 .mobile-contacts-mail {
@@ -126,11 +130,15 @@
 	margin-bottom: 64px;
 
 	font-weight: 500;
-	font-size: 24px;
+	font-size: 20px;
 	line-height: calc(28 / 24);
 	letter-spacing: 0.02em;
 
 	color: var(--contacts);
+
+	@media screen and (min-width: 480px) {
+        font-size: 24px;
+    }
 }
 
 .mobile-social {
@@ -138,9 +146,13 @@
 	gap: 20px;
 
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 12px;
 	line-height: 1.22;
 	letter-spacing: 0.02em;
+
+	@media screen and (min-width: 480px) {
+        font-size: 18px;
+    }
 }
 
 .mobile-social-link {
