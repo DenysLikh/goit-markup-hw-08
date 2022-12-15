@@ -30,7 +30,8 @@
 				<nav class="boxforflex-nav">
 					<!--logo-->
 					<a href="./index.html" class="logo-web link">
-						<span>Web</span><span class="logo-studio-header link">Studio</span>
+						<span>Web</span>
+						<span class="logo-studio-header link">Studio</span>
 					</a>
 					<ul class="list boxforflex-navlink">
 						<li><a href="./index.html" class="nav-link link current">Студія</a></li>
@@ -127,15 +128,36 @@
 					<h2 class="section-title">Чим ми займаємося</h2>
 					<ul class="list boxforflex-sections">
 						<li class="wwd__image">
-							<img src="./images/box-what-we-do-1.jpg" alt="Кодування" width="370" height="294" />
+							<img
+								srcset="./images/wwd-images/img1_lar@1x.jpg 1x, ./images/wwd-images/img1_lar@2x.jpg 2x"
+								src="./images/wwd-images/img1_lar@1x.jpg"
+								alt="Кодування"
+								width="370"
+								height="294"
+								loading="lazy"
+							/>
 							<p class="wwd__text">Десктопні додатки</p>
 						</li>
 						<li class="wwd__image">
-							<img src="./images/box-what-we-do-2.jpg" alt="Оптимізація" width="370" height="294" />
+							<img
+								srcset="./images/wwd-images/img2_lar@1x.jpg 1x, ./images/wwd-images/img2_lar@2x.jpg 2x"
+								src="./images/wwd-images/img2_lar@1x.jpg"
+								alt="Оптимізація"
+								width="370"
+								height="294"
+								loading="lazy"
+							/>
 							<p class="wwd__text">Мобільні додатки</p>
 						</li>
 						<li class="wwd__image">
-							<img src="./images/box-what-we-do-3.jpg" alt="Дизайн" width="370" height="294" />
+							<img
+								srcset="./images/wwd-images/img3_lar@1x.jpg 1x, ./images/wwd-images/img3_lar@2x.jpg 2x"
+								src="./images/wwd-images/img3_lar@1x.jpg"
+								alt="Дизайн"
+								width="370"
+								height="294"
+								loading="lazy"
+							/>
 							<p class="wwd__text">Дизайнерські рішення</p>
 						</li>
 					</ul>
@@ -147,7 +169,49 @@
 					<h2 class="section-title">Наша команда</h2>
 					<ul class="list boxforflex-sections">
 						<li class="team-cards">
-							<img src="./images/img-igor.jpg" alt="1й член команди" width="270" height="260" />
+							<picture>
+								<!-- Desktop screen -->
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/team-images/img1_lar@1x.webp 1x, ./images/team-images/img1_lar@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/team-images/img1_lar@1x.jpg 1x, ./images/team-images/img1_lar@2x.jpg 2x"
+									type="image/jpg"
+								/>
+								<!-- Tablet screen -->
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/team-images/img1_mid@1x.webp 1x, ./images/team-images/img1_mid@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/team-images/img1_mid@1x.jpg 1x, ./images/team-images/img1_mid@2x.jpg 2x"
+									type="image/jpg"
+								/>
+								<!-- Mobile screen -->
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/team-images/img1_lit@1x.webp 1x, ./images/team-images/img1_lit@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/team-images/img1_lit@1x.jpg 1x, ./images/team-images/img1_lit@2x.jpg 2x"
+									type="image/jpg"
+								/>
+								<img
+									class="card-img"
+									src="./images/team-images/img1_lit@1x.jpg"
+									alt="1й член команди"
+									width="450"
+									height="460"
+									loading="lazy"
+								/>
+							</picture>
 							<div class="team-cards-text-space">
 								<h3 class="name-team">Ігор Дем'яненко</h3>
 								<p lang="en" class="text-team">Product Designer</p>
@@ -208,7 +272,49 @@
 							</div>
 						</li>
 						<li class="team-cards">
-							<img src="./images/img-olga.jpg" alt="2й член команди" width="270" height="260" />
+							<picture>
+								<!-- Desktop screen -->
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/team-images/img2_lar@1x.webp 1x, ./images/team-images/img2_lar@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/team-images/img2_lar@1x.jpg 1x, ./images/team-images/img2_lar@2x.jpg 2x"
+									type="image/jpg"
+								/>
+								<!-- Tablet screen -->
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/team-images/img2_mid@1x.webp 1x, ./images/team-images/img2_mid@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/team-images/img2_mid@1x.jpg 1x, ./images/team-images/img2_mid@2x.jpg 2x"
+									type="image/jpg"
+								/>
+								<!-- Mobile screen -->
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/team-images/img2_lit@1x.webp 1x, ./images/team-images/img2_lit@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/team-images/img2_lit@1x.jpg 1x, ./images/team-images/img2_lit@2x.jpg 2x"
+									type="image/jpg"
+								/>
+								<img
+									class="card-img"
+									src="./images/team-images/img2_lit@1x.jpg"
+									alt="2й член команди"
+									width="450"
+									height="460"
+									loading="lazy"
+								/>
+							</picture>
 							<div class="team-cards-text-space">
 								<h3 class="name-team">Ольга Рєпіна</h3>
 								<p lang="en" class="text-team">Frontend Developer</p>
@@ -269,7 +375,49 @@
 							</div>
 						</li>
 						<li class="team-cards">
-							<img src="./images/img-mikola.jpg" alt="3й член команди" width="270" height="260" />
+							<picture>
+								<!-- Desktop screen -->
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/team-images/img3_lar@1x.webp 1x, ./images/team-images/img3_lar@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/team-images/img3_lar@1x.jpg 1x, ./images/team-images/img3_lar@2x.jpg 2x"
+									type="image/jpg"
+								/>
+								<!-- Tablet screen -->
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/team-images/img3_mid@1x.webp 1x, ./images/team-images/img3_mid@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/team-images/img3_mid@1x.jpg 1x, ./images/team-images/img3_mid@2x.jpg 2x"
+									type="image/jpg"
+								/>
+								<!-- Mobile screen -->
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/team-images/img3_lit@1x.webp 1x, ./images/team-images/img3_lit@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/team-images/img3_lit@1x.jpg 1x, ./images/team-images/img3_lit@2x.jpg 2x"
+									type="image/jpg"
+								/>
+								<img
+									class="card-img"
+									src="./images/team-images/img3_lit@1x.jpg"
+									alt="3й член команди"
+									width="450"
+									height="460"
+									loading="lazy"
+								/>
+							</picture>
 							<div class="team-cards-text-space">
 								<h3 class="name-team">Микола Тарасов</h3>
 								<p lang="en" class="text-team">Marketing</p>
@@ -330,7 +478,49 @@
 							</div>
 						</li>
 						<li class="team-cards">
-							<img src="./images/img-mihailo.jpg" alt="4й член команди" width="270" height="260" />
+							<picture>
+								<!-- Desktop screen -->
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/team-images/img4_lar@1x.webp 1x, ./images/team-images/img4_lar@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/team-images/img4_lar@1x.jpg 1x, ./images/team-images/img4_lar@2x.jpg 2x"
+									type="image/jpg"
+								/>
+								<!-- Tablet screen -->
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/team-images/img4_mid@1x.webp 1x, ./images/team-images/img4_mid@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/team-images/img4_mid@1x.jpg 1x, ./images/team-images/img4_mid@2x.jpg 2x"
+									type="image/jpg"
+								/>
+								<!-- Mobile screen -->
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/team-images/img4_lit@1x.webp 1x, ./images/team-images/img4_lit@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/team-images/img4_lit@1x.jpg 1x, ./images/team-images/img4_lit@2x.jpg 2x"
+									type="image/jpg"
+								/>
+								<img
+									class="card-img"
+									src="./images/team-images/img4_lit@1x.jpg"
+									alt="4й член команди"
+									width="450"
+									height="460"
+									loading="lazy"
+								/>
+							</picture>
 							<div class="team-cards-text-space">
 								<h3 class="name-team">Михайло Єрмаков</h3>
 								<p lang="en" class="text-team">UI Designer</p>
@@ -485,92 +675,92 @@
 			<div class="container footer-flex">
 				<div class="address-and-join-wrapper">
 					<div class="address-wrapper">
-					<!--logo text-->
-					<a href="./index.html" class="footer-logo-text logo-web logo-web-footer link">
-						<span>Web</span>
-						<span class="logo-studio-footer link">Studio</span>
-					</a>
-					<!--address links-->
-					<address>
-						<ul class="list">
+						<!--logo text-->
+						<a href="./index.html" class="footer-logo-text logo-web logo-web-footer link">
+							<span>Web</span>
+							<span class="logo-studio-footer link">Studio</span>
+						</a>
+						<!--address links-->
+						<address>
+							<ul class="list">
+								<li>
+									<a
+										href="https://goo.gl/maps/ZYpvRGQHk616j4x77"
+										target="_blank"
+										rel="noopener noreferrer nofollow"
+										class="link address"
+									>
+										м. Київ, пр-т Лесі Українки, 26
+									</a>
+								</li>
+								<li class="list-address">
+									<a href="mailto:info@devstudio.com" class="footer-contacts link">info@devstudio.com</a>
+								</li>
+								<li class="list-address">
+									<a href="tel:+380961111111" class="footer-contacts link">+38(096) 111-11-11</a>
+								</li>
+							</ul>
+						</address>
+					</div>
+					<div class="join-wrapper">
+						<h3 class="name__features footer-cta">приєднуйтесь</h3>
+						<ul class="list social-icons footer-social-icons">
 							<li>
 								<a
-									href="https://goo.gl/maps/ZYpvRGQHk616j4x77"
+									href="https://instagram.com"
+									class="link social-link footer-link"
 									target="_blank"
-									rel="noopener noreferrer nofollow"
-									class="link address"
+									rel="noopener noreferrer"
+									aria-label="посилання на instagram"
 								>
-									м. Київ, пр-т Лесі Українки, 26
+									<svg class="footer-icon" width="20px" height="20px">
+										<use href="./images/icons.svg#icon-instagram"></use>
+									</svg>
 								</a>
 							</li>
-							<li class="list-address">
-								<a href="mailto:info@devstudio.com" class="footer-contacts link">info@devstudio.com</a>
+							<li>
+								<a
+									href="https://twitter.com"
+									class="link social-link footer-link"
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="посилання на twitter"
+								>
+									<svg class="footer-icon" width="20px" height="20px">
+										<use href="./images/icons.svg#icon-twitter"></use>
+									</svg>
+								</a>
 							</li>
-							<li class="list-address">
-								<a href="tel:+380961111111" class="footer-contacts link">+38(096) 111-11-11</a>
+							<li>
+								<a
+									href="https://facebook.com"
+									class="link social-link footer-link"
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="посилання на facebook"
+								>
+									<svg class="footer-icon" width="20px" height="20px">
+										<use href="./images/icons.svg#icon-facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://linkedin.com"
+									class="link social-link footer-link"
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="посилання на linkedin"
+								>
+									<svg class="footer-icon" width="20px" height="20px">
+										<use href="./images/icons.svg#icon-linkedin"></use>
+									</svg>
+								</a>
 							</li>
 						</ul>
-					</address>
+					</div>
 				</div>
-				<div class="join-wrapper">
-					<h3 class="name__features footer-cta">приєднуйтесь</h3>
-					<ul class="list social-icons footer-social-icons">
-						<li>
-							<a
-								href="https://instagram.com"
-								class="link social-link footer-link"
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label="посилання на instagram"
-							>
-								<svg class="footer-icon" width="20px" height="20px">
-									<use href="./images/icons.svg#icon-instagram"></use>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a
-								href="https://twitter.com"
-								class="link social-link footer-link"
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label="посилання на twitter"
-							>
-								<svg class="footer-icon" width="20px" height="20px">
-									<use href="./images/icons.svg#icon-twitter"></use>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a
-								href="https://facebook.com"
-								class="link social-link footer-link"
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label="посилання на facebook"
-							>
-								<svg class="footer-icon" width="20px" height="20px">
-									<use href="./images/icons.svg#icon-facebook"></use>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a
-								href="https://linkedin.com"
-								class="link social-link footer-link"
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label="посилання на linkedin"
-							>
-								<svg class="footer-icon" width="20px" height="20px">
-									<use href="./images/icons.svg#icon-linkedin"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
-				</div>
-				
+
 				<div class="sign-up-wrapper">
 					<h3 class="name__features footer-cta">Підпишіться на розсилку</h3>
 					<form class="signup-field" name="signup_form" autocomplete="on">
@@ -655,9 +845,9 @@
 			</ul>
 			<ul class="mobile-social list">
 				<li><a href="./index.html" class="mobile-social-link link">Instagram</a></li>
-				<li><a href="./index.html" class="mobile-social-link link">Twitter</a></li>
-				<li><a href="./index.html" class="mobile-social-link link">Facebook</a></li>
-				<li><a href="./index.html" class="mobile-social-link link">LinkedIn</a></li>															
+				<li><a href="./index.html" class="mobile-social-link mobile-social-link-link link">Twitter</a></li>
+				<li><a href="./index.html" class="mobile-social-link mobile-social-link-link link">Facebook</a></li>
+				<li><a href="./index.html" class="mobile-social-link mobile-social-link-link link">LinkedIn</a></li>
 			</ul>
 		</div>
 		<!-- Скрипт для модалки -->

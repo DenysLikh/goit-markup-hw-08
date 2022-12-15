@@ -161,26 +161,22 @@
 	color: var(--brand);
 }
 
-.mobile-social-link::after {
-	position: absolute;
+.mobile-social-link-link:before {
 
-	content: "";
+	@media screen and (min-width: 480px) {
+    position: absolute;
+
+	content: " ";
 	display: block;
-	// align-items: baseline;
-	// justify-content: center;
-
 	width: 22px;
-	height: 1px;
-	margin: 0;
+	height: 0px;
 
-	background-color: orange;
-
-	// border: 1px solid rgba(33, 33, 33, 0.2);
-	// outline-offset: -1px;
+	left: -20px;
+	top: 10px;
+	
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	outline-offset: -1px;
 
 	transform: rotate(90deg);
-}
-
-.mobile-social-link::after:last-child {
-	background-color: red;
+    }
 }
