@@ -12,7 +12,10 @@
 
 .address-wrapper {   
     text-align: center;
+    
+    @media screen and (max-width: 767.98px) {	
     margin-bottom: 60px;
+	}  
 
     @media screen and (min-width: 1200px) {
     text-align: left;
@@ -22,9 +25,8 @@
 	}   
 }
 
-.join-wrapper {
-    margin-bottom: 60px;
-
+.join-wrapper {     
+    
     @media screen and (min-width: 1200px) {	
     margin-right: 93px;
     margin-bottom: 0;
@@ -88,11 +90,16 @@
 
 .address-and-join-wrapper {
 
+    @media screen and (max-width: 767.98px) {	
+    margin-bottom: 60px;
+	} 
+
     @media screen and (min-width: 768px) and (max-width: 1199.98px) {
 		display: flex;
         justify-content: center;
         align-items: baseline;
         gap: 165px;
+        margin-bottom: 60px;
 	}
     
     @media screen and (min-width: 1200px) {	

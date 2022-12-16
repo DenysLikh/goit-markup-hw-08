@@ -18,11 +18,12 @@
         padding: 118px 0;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
         padding: 200px 0;
     }
 
     background-color: var(--hero-bgd);
+    background-size: cover;
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/hero-images/Header_img_lit@1x.jpg);
@@ -34,7 +35,7 @@
     url(../images/hero-images/Header_img_lit@2x.jpg);
     }
 
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: 768px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/hero-images/Header_img_mid@1x.jpg);
 
@@ -46,7 +47,7 @@
     }
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/hero-images/Header_img_lar@1x.jpg);
 

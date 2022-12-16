@@ -39,6 +39,10 @@
     
     line-height: calc(16 / 14);
     text-transform: uppercase;
+
+    @media screen and (max-width: 767.98px) {	
+    text-align: center;;
+	} 
 }
 
 .text__features {
